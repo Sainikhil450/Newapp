@@ -1,0 +1,104 @@
+/* General styles for the home container */
+
+html {
+  scroll-behavior: smooth;
+}
+/* General styles for the home container */
+.home-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: scroll; /* Ensure vertical scrollbar is always visible */
+}
+
+/* Header styling to ensure it is positioned correctly */
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+/* Add margin to the main container to account for fixed header */
+.home-container {
+  margin-top: 60px;
+}
+
+/* Hero section styling */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('../Images/id.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+}
+
+/* Idea section styling */
+.idea-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('../Images/ide.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #333;
+  text-align: center;
+}
+
+/* Submit Idea button */
+.submit-idea-button {
+  background-color: #87CEEB;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-idea-button:hover {
+  background-color: #4682B4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .idea-section h3 {
+    font-size: 2rem;
+  }
+
+  .idea-section p {
+    font-size: 1.2rem;
+  }
+}

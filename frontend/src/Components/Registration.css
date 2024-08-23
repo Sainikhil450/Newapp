@@ -1,0 +1,89 @@
+/* General styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0; /* Fallback background color */
+}
+
+.bg-image {
+  background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gradient-custom-3 {
+  background: linear-gradient(to right, rgba(28, 226, 101, 0.5), rgba(12, 165, 241, 0.5));
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-custom {
+  border-radius: 10px; /* Reduced border-radius for a more compact look */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Slightly reduced shadow */
+  width: 100%; /* Full width of the container */
+  max-width: 400px; /* Set a maximum width for the card */
+}
+
+.card-body {
+  padding: 30px; /* Reduced padding */
+}
+
+h2 {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.8rem; /* Slightly smaller font size */
+  color: #333;
+}
+
+.formGroup {
+  margin-bottom: 15px; /* Reduced margin between form groups */
+}
+
+.input {
+  width: 100%;
+  padding: 8px; /* Reduced padding */
+  border-radius: 5px;
+  border: 1px solid #f9b007;
+  margin-top: 5px;
+}
+
+.form-label {
+  font-size: 13px; /* Slightly smaller font size */
+  color: #0e0e0e;
+}
+
+.button {
+  padding: 10px; /* Reduced padding */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #28a745; /* Make sure the button color is consistent */
+  color: #f4f3f3; /* Ensure text color is readable */
+  font-size: 14px; /* Adjust font size for consistency */
+}
+
+.gradient-custom-4 {
+  background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+}
+
+.link {
+  color: #007BFF;
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 12px; /* Slightly smaller font size */
+}
+
+.text-muted {
+  color: #10100f !important;
+}

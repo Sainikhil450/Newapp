@@ -1,0 +1,80 @@
+/* Submit.css */
+
+.submit-container {
+    padding: 20px; /* Reduced padding for a smaller form */
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f8896a, #b2ee5e); /* Gradient background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    max-width: 600px; /* Reduced maximum width */
+    margin: 80px auto 40px auto; /* Added top margin to ensure space below the header and bottom margin */
+}
+  
+.submit-container h2 {
+    text-align: center;
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 2em; /* Adjusted font size for the heading */
+    color: #003d3d; /* Dark teal color for the heading */
+}
+  
+.submit-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+}
+  
+.submit-container label {
+    font-weight: bold; /* Bold labels */
+    color: #005a5a; /* Dark teal color for labels */
+}
+  
+.submit-container input, 
+.submit-container textarea, 
+.submit-container select {
+    width: 100%; /* Full width of the container */
+    padding: 10px; /* Reduced padding inside inputs */
+    border: 1px solid #c6e3e0; /* Dark teal border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #ffffff; /* White background */
+    color: #003d3d; /* Text color inside inputs */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+  
+.submit-container input:focus, 
+.submit-container textarea:focus, 
+.submit-container select:focus {
+    border-color: #59857f; /* Darker teal border on focus */
+    outline: none; /* Remove default outline */
+}
+  
+.submit-container textarea {
+    min-height: 120px; /* Reduced minimum height for the textarea */
+}
+  
+.submit-container button {
+    padding: 10px; /* Reduced padding inside button */
+    background-color: #00796b; /* Dark teal background */
+    color: white; /* White text color */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1em; /* Standard font size for button */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+  
+.submit-container button:hover {
+    background-color: #004d40; /* Darker teal on hover */
+}
+  
+.submit-container .file-input {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between file input and label */
+}
+  
+.submit-container .file-input input {
+    border: 1px solid #82af18; /* Dark teal border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #ffffff; /* White background */
+    color: #003d3d; /* Text color inside file input */
+}

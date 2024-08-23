@@ -1,0 +1,126 @@
+/* Header.css */
+.header {
+    width: calc(100% - 50px); /* Adjusted width to provide space on both sides */
+    padding: 40px 60px 40px; /* Padding for a more spacious header */
+    background-color: rgba(19, 25, 33, 0.8); /* Dark background with slight transparency */
+    color: white;
+    display: flex; /* Enables flexbox */
+    align-items: center; /* Vertically centers items */
+    position: fixed; /* Keeps the header at the top */
+    top: 0;
+    left: 20px; /* Add space from the left edge */
+    right: 20px; /* Add space from the right edge */
+    z-index: 1000; /* Ensures the header stays above other elements */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for better separation */
+    border-radius: 50px; /* Add curved edges to the header */
+    overflow: hidden; /* Ensures children elements do not overflow the curved border */
+    margin-top: 10px;
+}
+
+/* Container for the logo and navigation */
+.header .header-content {
+    display: flex;
+    width: 100%;
+    align-items: center; /* Vertically centers items */
+    justify-content: space-between; /* Space between logo and menu */
+}
+
+/* Logo */
+.header .logo {
+    font-size: 1rem; /* Adjusted size for better visibility */
+    font-weight: bold;
+}
+
+/* Navigation links container */
+.header .nav-links-container {
+    display: flex;
+    flex: 2; /* Allows the nav-links container to take up available space */
+    justify-content: center; /* Centers the navigation links horizontally */
+}
+
+/* Navigation links */
+.header .nav-links {
+    
+    display: flex;
+    gap: 30px; /* Space between links */
+}
+
+.header .nav-links a {
+
+    color: white;
+    text-decoration: none; /* Remove underline from all links */
+    font-size: 1.5rem; /* Font size for navigation links */
+    padding: 10px 15px; /* Adds padding to create a button-like appearance */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover and active effects */
+    border-radius: 100px; /* Rounded corners for buttons */
+    background-color: transparent; /* No background color by default */
+}
+
+.header .nav-links a:hover {
+    color: #f3c930; /* Hover color similar to Amazon's accent color */
+    background-color: rgba(208, 235, 111, 0.2); /* Light background color on hover with increased transparency */
+}
+
+.header .nav-links a.active {
+    color: #f3c930; /* Active link color */
+    background-color: rgba(29, 29, 29, 0.8); /* Darker background color for the active link with transparency */
+    font-weight: bold; /* Bold font for active link */
+}
+
+/* Hamburger icon */
+.header .hamburger {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    gap: 4px; /* Space between lines */
+    cursor: pointer;
+}
+
+.header .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+/* Mobile menu */
+.header .mobile-menu {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    width: calc(100% - 40px); /* Adjusted width to match header */
+    background-color: rgba(19, 25, 33, 0.9); /* Same as header background with slight transparency */
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    left: 20px; /* Match header's left padding */
+    right: 20px; /* Match header's right padding */
+    z-index: 1001; /* Above other elements */
+    border-radius: 0 0 10px 10px; /* Curved bottom corners for mobile menu */
+}
+
+/* Mobile menu items */
+.header .mobile-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.header .mobile-menu a:hover {
+    background-color: rgba(208, 235, 111, 0.2); /* Light background color on hover with increased transparency */
+}
+
+/* Show mobile menu when active */
+.header .mobile-menu.active {
+    display: flex;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .header .nav-links-container {
+        display: none; /* Hide desktop menu */
+    }
+    
+    .header .hamburger {
+        display: flex; /* Show hamburger icon */
+    }
+}
